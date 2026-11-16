@@ -1,3 +1,5 @@
+package praktika1;
+
 import java.util.ArrayList;
 
 public class Shop {

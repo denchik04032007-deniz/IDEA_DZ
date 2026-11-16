@@ -1,3 +1,5 @@
+package praktika1;
+
 enum ComputerBrand {
     ASUS, HP, DELL, APPLE, LENOVO
 }

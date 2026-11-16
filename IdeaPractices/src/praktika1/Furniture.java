@@ -1,3 +1,5 @@
+package praktika1;
+
 import java.util.ArrayList;
 
 abstract class Furniture {
@@ -29,7 +31,7 @@ class Chair extends Furniture {
 
     @Override
     public void displayInfo() {
-        System.out.printf("🪑 Стул: %s | Материал: %s | Цена: %.2f руб.%n",
+        System.out.printf("Стул: %s | Материал: %s | Цена: %.2f руб.%n",
                 getName(), material, getPrice());
     }
 }
@@ -44,7 +46,7 @@ class Table extends Furniture {
 
     @Override
     public void displayInfo() {
-        System.out.printf("🪵 Стол: %s | Форма: %s | Цена: %.2f руб.%n",
+        System.out.printf("Стол: %s | Форма: %s | Цена: %.2f руб.%n",
                 getName(), shape, getPrice());
     }
 }

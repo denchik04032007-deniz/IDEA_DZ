@@ -1,3 +1,5 @@
+package praktika1;
+
 public class CurrencyConverter {
     private final double usdRate = 95.50;
     private final double eurRate = 102.10;

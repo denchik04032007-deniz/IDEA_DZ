@@ -1,3 +1,5 @@
+package praktika1;
+
 public class TestAuthor {
     public static void main(String[] args) {
         Author author = new Author("Иван Иванов", "ivan@example.com", 'm');

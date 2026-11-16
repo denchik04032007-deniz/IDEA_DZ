@@ -1,3 +1,5 @@
+package praktika1;
+
 public class Author {
     private String name;
     private String email;
@@ -22,6 +24,6 @@ public class Author {
     }
     @Override
     public String toString() {
-        return "Author[name=" + name + ", email=" + email + ", gender=" + gender + "]";
+        return "praktika1.Author[name=" + name + ", email=" + email + ", gender=" + gender + "]";
     }
 }

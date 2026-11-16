@@ -1,3 +1,5 @@
+package praktika1;
+
 public class FurnitureDemo {
     public static void main(String[] args) {
         FurnitureShop shop = new FurnitureShop();

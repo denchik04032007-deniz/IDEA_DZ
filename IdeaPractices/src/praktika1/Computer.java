@@ -1,3 +1,5 @@
+package praktika1;
+
 public class Computer {
     private String brand; // Марка/Бренд
     private String model; // Модель

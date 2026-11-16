@@ -1,3 +1,5 @@
+package praktika1;
+
 public class Main {
     public static long Factorial(int n) {
         if (n < 0) {

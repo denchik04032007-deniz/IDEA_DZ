@@ -1,3 +1,5 @@
+package praktika1;
+
 interface Printable {
     void print();
 }
