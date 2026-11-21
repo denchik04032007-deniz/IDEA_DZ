@@ -3,7 +3,7 @@ package praktika2;
 import java.util.Scanner;
 
 public class prak87 {
-    public static void factorize(int n, int d) {   //d — текущий делитель
+    public static void factorize(int n, int d) {
         if (n == 1) {
             return;
         }

@@ -32,7 +32,8 @@ public class Prak11Task2 {
             else {
                 System.out.println("Даты совпадают.");
             }
-        } catch (ParseException e) {
+        }
+        catch (ParseException e) {
             System.out.println("Ошибка: вы ввели дату в неверном формате!");
         }
     }
