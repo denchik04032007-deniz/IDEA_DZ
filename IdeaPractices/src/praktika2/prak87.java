@@ -14,11 +14,11 @@ public class prak87 {
         }
         //шаг рекурсии
         if (n % d == 0) {
-            System.out.print(d + " ");   //d — простой множитель
-            factorize(n / d, d);   //делим и пробуем ТОТ ЖЕ делитель
+            System.out.print(d + " ");
+            factorize(n / d, d);
         }
         else {
-            factorize(n, d + 1);   //не делится — пробуем следующий
+            factorize(n, d + 1);
         }
     }
 

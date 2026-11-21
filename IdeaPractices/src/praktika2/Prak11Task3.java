@@ -3,7 +3,6 @@ package praktika2;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//Класс студента
 class Prak11Student {
     private String name;
     private String surname;
@@ -15,7 +14,6 @@ class Prak11Student {
         this.birthDate = birthDate;
     }
 
-    //Метод, который возвращает дату рождения в ЛЮБОМ переданном формате
     public String getBirthDateFormatted(String pattern) {
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         return sdf.format(birthDate);

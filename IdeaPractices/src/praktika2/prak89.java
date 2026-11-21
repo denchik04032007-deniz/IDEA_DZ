@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class prak89 {
     public static int count(int a, int b) {
-        //нулей нет — последовательность одна (все единицы)
+        //нулей нет — последовательность одна(все единицы)
         if (a == 0) {
             return 1;
         }
         //единиц нет — ноль может быть только один
         if (b == 0) {
             if (a == 1) {
-                return 1;   //последовательность "0"
+                return 1;
             }
-            return 0;       //два нуля встанут рядом — не подходит
+            return 0;
         }
         return count(a, b - 1) + count(a - 1, b - 1);
     }

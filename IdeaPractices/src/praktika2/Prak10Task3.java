@@ -2,14 +2,11 @@ package praktika2;
 
 public class Prak10Task3 {
     public static void main(String[] args) {
-        //Первый список студентов
         Prak10Student3[] list1 = {
                 new Prak10Student3(101, "Иванов", "ИВТ", 2, "ИВТ-201"),
                 new Prak10Student3(205, "Петров", "ИВТ", 3, "ИВТ-301"),
                 new Prak10Student3(310, "Сидоров", "ПИ", 1, "ПИ-101")
         };
-
-        //Второй список студентов
         Prak10Student3[] list2 = {
                 new Prak10Student3(150, "Алексеев", "ПИ", 2, "ПИ-201"),
                 new Prak10Student3(220, "Смирнов", "ИВТ", 4, "ИВТ-401"),
@@ -29,8 +26,6 @@ public class Prak10Task3 {
         System.out.println("\nОбъединенный отсортированный список:");
         printArray(merged);
     }
-
-    //Метод слияния двух отсортированных массивов
     public static Prak10Student3[] merge(Prak10Student3[] a, Prak10Student3[] b) {
         Prak10Student3[] result = new Prak10Student3[a.length + b.length];
         int i = 0; //указатель для первого массива

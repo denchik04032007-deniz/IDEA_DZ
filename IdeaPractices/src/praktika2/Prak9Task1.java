@@ -1,6 +1,5 @@
 package praktika2;
 
-// Класс Student с уникальным именем
 class Prak9Student {
     private int iDNumber;
     private String name;
@@ -23,7 +22,6 @@ class Prak9Student {
     }
 }
 
-// Класс сортировки с уникальным именем
 class Prak9InsertionSort {
     public static void insertionSort(Prak9Student[] students) {
         for (int i = 1; i < students.length; i++) {
@@ -39,10 +37,8 @@ class Prak9InsertionSort {
     }
 }
 
-// Главный класс с уникальным именем (файл должен называться Prak9Task1.java)
 public class Prak9Task1 {
     public static void main(String[] args) {
-        // Создаем массив студентов в случайном порядке
         Prak9Student[] students = {
                 new Prak9Student(303, "Иван"),
                 new Prak9Student(101, "Петр"),
@@ -50,13 +46,11 @@ public class Prak9Task1 {
                 new Prak9Student(202, "Анна")
         };
 
-        // Выводим до сортировки
         System.out.println("До сортировки:");
         for (Prak9Student s : students) {
             System.out.println(s);
         }
 
-        // Вызываем сортировку вставками
         Prak9InsertionSort.insertionSort(students);
 
         // Выводим после сортировки

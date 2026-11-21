@@ -24,7 +24,6 @@ class Prak13Person {
         this.middleName = middleName;
     }
 
-    //Оптимизация через StringBuilder
     public String getFIO() {
         StringBuilder sb = new StringBuilder(lastName);
 

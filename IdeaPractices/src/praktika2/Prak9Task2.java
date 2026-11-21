@@ -2,7 +2,6 @@ package praktika2;
 
 import java.util.Comparator;
 
-//Класс студента
 class Prak9Task2Student {
     private int id;
     private String name;
@@ -24,7 +23,6 @@ class Prak9Task2Student {
     }
 }
 
-//Класс-компаратор для сортировки по GPA в порядке убывания
 class Prak9GpaComparator implements Comparator<Prak9Task2Student> {
     @Override
     public int compare(Prak9Task2Student s1, Prak9Task2Student s2) {
@@ -32,7 +30,6 @@ class Prak9GpaComparator implements Comparator<Prak9Task2Student> {
     }
 }
 
-//Алгоритм быстрой сортировки
 class Prak9QuickSort {
     public static void sort(Prak9Task2Student[] arr, int low, int high, Comparator<Prak9Task2Student> comp) {
         if (low < high) {
@@ -44,7 +41,7 @@ class Prak9QuickSort {
     }
 
     private static int partition(Prak9Task2Student[] arr, int low, int high, Comparator<Prak9Task2Student> comp) {
-        Prak9Task2Student pivot = arr[high]; //Опорный элемент — последний
+        Prak9Task2Student pivot = arr[high];
         int i = (low - 1);
 
         for (int j = low; j < high; j++) {
