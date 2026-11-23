@@ -1,6 +1,6 @@
 package praktika1;
 
-public class CurrencyConverter {
+public class CurrencyConverterp3t1 {
     private final double usdRate = 95.50;
     private final double eurRate = 102.10;
     private final double cnyRate = 13.20;
@@ -12,13 +12,16 @@ public class CurrencyConverter {
         if (currency.equalsIgnoreCase("USD")) {
             result = amount * usdRate;
             symbol = "$";
-        } else if (currency.equalsIgnoreCase("EUR")) {
+        }
+        else if (currency.equalsIgnoreCase("EUR")) {
             result = amount * eurRate;
             symbol = "€";
-        } else if (currency.equalsIgnoreCase("CNY")) {
+        }
+        else if (currency.equalsIgnoreCase("CNY")) {
             result = amount * cnyRate;
             symbol = "¥";
-        } else {
+        }
+        else {
             System.out.println("Ошибка: Неподдерживаемая валюта!");
             return;
         }
@@ -33,17 +36,19 @@ public class CurrencyConverter {
         if (targetCurrency.equalsIgnoreCase("USD")) {
             result = rubAmount / usdRate;
             symbol = "$";
-        } else if (targetCurrency.equalsIgnoreCase("EUR")) {
+        }
+        else if (targetCurrency.equalsIgnoreCase("EUR")) {
             result = rubAmount / eurRate;
             symbol = "€";
-        } else if (targetCurrency.equalsIgnoreCase("CNY")) {
+        }
+        else if (targetCurrency.equalsIgnoreCase("CNY")) {
             result = rubAmount / cnyRate;
             symbol = "¥";
-        } else {
+        }
+        else {
             System.out.println("Ошибка: Неподдерживаемая валюта!");
             return;
         }
-
-        System.out.printf("Результат: %.2f руб. = %.2f%s%n", rubAmount, result, symbol);
+        System.out.printf("Результат: %.2f руб. = %.2f%s\n", rubAmount, result, symbol);
     }
 }

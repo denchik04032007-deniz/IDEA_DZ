@@ -2,9 +2,9 @@ package praktika1;
 
 import java.util.Scanner;
 
-public class TestConverter {
+public class TestConverterp3t1 {
     public static void main(String[] args) {
-        CurrencyConverter converter = new CurrencyConverter();
+        CurrencyConverterp3t1 converter = new CurrencyConverterp3t1();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -26,7 +26,8 @@ public class TestConverter {
 
                 converter.convertToRub(amount, currency);
 
-            } else if (choice == 2) {
+            }
+            else if (choice == 2) {
                 System.out.print("Введите целевую валюту (USD, EUR, CNY): ");
                 String targetCurrency = scanner.nextLine();
                 System.out.print("Введите сумму в рублях: ");
@@ -35,10 +36,12 @@ public class TestConverter {
 
                 converter.convertFromRub(rubAmount, targetCurrency);
 
-            } else if (choice == 3) {
+            }
+            else if (choice == 3) {
                 System.out.println("Работа завершена. До свидания!");
                 break;
-            } else {
+            }
+            else {
                 System.out.println("Неверный пункт меню!");
             }
         }

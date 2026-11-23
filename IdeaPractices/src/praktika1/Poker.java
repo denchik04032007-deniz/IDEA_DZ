@@ -23,11 +23,12 @@ public class Poker {
         if (n <= 0) {
             System.out.println("Количество игроков должно быть больше 0.");
             return;
-        } else if (n * cardsPerPlayer > totalCards) {
+        }
+        else if (n * cardsPerPlayer > totalCards) {
             System.out.println("Игроков слишком много! В колоде всего 52 карты.");
             return;
         }
-
+        //создание колоды
         String[] deck = new String[totalCards];
         int count = 0;
         for (String suit : suits) {
@@ -36,7 +37,7 @@ public class Poker {
                 count++;
             }
         }
-
+        //перетасовка колоды
         for (int i = 0; i < totalCards; i++) {
             int randomIndex = i + (int) (Math.random() * (totalCards - i));
 
@@ -56,7 +57,6 @@ public class Poker {
             }
             System.out.println();
         }
-
         scanner.close();
     }
 }
